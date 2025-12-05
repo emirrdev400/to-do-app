@@ -1,0 +1,195 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+
+body {
+    padding-left: 8%;
+    padding-right: 8%;
+ 
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(wallhaven-gwjq3d.jpg);
+    
+    /* 2. Tekrarı engelle ve resmi ortala */
+    background-repeat: no-repeat; 
+    background-position: center;
+    background-size: cover;
+    
+    /* 3. İçeriğin ekranı kaplaması için height: 100vh yerinde kalmalı. */
+    height: 100vh; 
+    width: 100%;
+    
+    color: white; /* İçerik rengini açık yaparak görünürlüğünü artırın */
+}
+
+
+
+
+
+
+button {
+    padding: 8px 18px; 
+    /* 8px 18px ile butonu büyüttüm */
+    border-radius: 20px;
+    border: none;
+    cursor: pointer;
+    transition: .3s;
+}
+#todoList li{
+    background: rgba(255,255,255,0.1);
+    padding: 12px 18px;
+    margin: 10px auto;
+    width: 350px;
+    border-radius: 12px;
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: #fff;
+    backdrop-filter: blur(6px);
+}
+
+.todo{
+    backdrop-filter: blur(10px);
+    background: rgba(255,255,255,0.2);
+    border-radius: 15px;
+    padding: 20px;
+}
+.todoItem {
+    background: rgba(255,255,255,0.2);
+    width: 60%;
+    margin: 15px auto;
+    padding: 12px;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    backdrop-filter: blur(5px);
+}
+
+/* Görev yazısı */
+.todoText {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+/* Ortak buton tasarımı */
+button {
+    padding: 8px 18px;
+    border-radius: 20px;
+    border: none;
+    cursor: pointer;
+    transition: .3s;
+}
+
+.todoInput{
+    border-radius: 30px;
+    padding: 5px 10px;
+}
+
+.doneBtn { background:#4caf50; color:white; margin-right:10px; }
+.doneBtn:hover { background:#3b8e41; }
+
+.deleteBtn { background:#e53935; color:white;}
+.deleteBtn:hover { background:#c62828; }
+
+
+
+.doneBtn{
+    margin-left: 30px;
+    margin-bottom: 20px;
+    border-radius: 80px;
+    padding: 10px 20px;
+    
+}
+.doneBtn:hover{
+    cursor: pointer;
+    background-color: black;
+    color: #fff;
+}
+.deleteBtn{
+    margin-left: 40px;
+    margin-top: 50px;
+    border-radius: 80px;
+    padding: 10px 20px;
+}
+.deleteBtn:hover{
+    cursor: pointer;
+    background-color: black;
+    color: #fff;
+}
+.addBtn:hover{
+    background-color: black;
+    color: #fff;
+    cursor: pointer;
+}
+.addBtn{
+    margin-left: 15px;
+    border-radius: 80px;
+    padding: 10px 20px;
+
+}
+
+.clearAll{
+    position: fixed;
+    right: 25px; /* sağdan mesafe */
+    bottom: 25px; /* alttan mesafe */
+    background-color: #ff3b3b;
+    color: white;
+    border: none;
+    padding: 14px 22px;
+    font-size: 16px;
+    border-radius: 50px;
+    cursor: pointer;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+    transition: 0.3s;
+}
+
+.clearAll:hover{
+    transform: scale(1.08);
+    background-color: #e10000;
+    
+}
+
+/* 📱 Telefon ve küçük ekranlar için */
+@media (max-width: 600px){
+    input{
+        width: 90%;
+        font-size: 16px;
+    }
+    .addBtn{
+        width: 90%;
+        margin-top: 10px;
+        font-size: 16px;
+    }
+    li{
+        font-size: 16px;
+    }
+    .clearAll{
+        bottom: 10px;
+        right: 10px;
+        padding: 10px 15px;
+        font-size: 14px;
+    }
+}
+
+#todoList li{
+    background: rgba(255,255,255,0.1);
+    color: #fff; /* istediğin renk */
+    font-size: 18px;           /* boyut */
+    margin-top: 10px;          /* aralık */
+    backdrop-filter: blur(6px);
+}
+
+
+.inputArea{
+    margin-top: 40px;
+}
+
+h1{
+    margin-top: 20px;
+
+    
+}

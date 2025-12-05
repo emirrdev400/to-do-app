@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo App</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+    <meta http-equiv="Content-Security-Policy"
+        content="default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline';">
+    <link rel="icon" type="image/png" href="todoapplogo.jpg">
+    <meta name="description"
+        content="Görev listesi oluşturma uygulaması. Yapılacaklar listesi, görev ekleme ve takibi.">
+    <meta name="keywords" content="todo app, yapılacaklar listesi, görev takip, not uygulaması, javascript todo">
+    <meta name="author" content="Emir">
+
+
+
+</head>
+
+<body>
+
+    <h1 class="title"> Todo App</h1>
+
+    <div class="inputArea">
+        <input type="text" id="todoInput" placeholder="Bir görev girin..." class="todoInput">
+        <button id="addBtn" class="addBtn">Ekle</button>
+    </div>
+
+    <ul id="todoList" class="todoList"></ul>
+    <button id="clearAll" class="clearAll">Tümünü Sil</button>
+
+    <p id="visitorCount" class="visitText"></p>
+
+
+
+    <script src="script.js"></script>
+
+
+</body>
+
+</html>

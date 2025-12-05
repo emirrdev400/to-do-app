@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://emirrdev400.github.io/projeadı/sitemap.xml
